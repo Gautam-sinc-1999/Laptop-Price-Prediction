@@ -494,7 +494,7 @@ storage_type = storage_encoding_dict[storage_type]
 
 import pickle
 
-file_path = 'C:/Users/LENOVO/Desktop/Cloud Project/model.pkl'
+file_path = './model.pkl'
 
 # Open the file in binary read mode ('rb')
 with open(file_path, 'rb') as f:
