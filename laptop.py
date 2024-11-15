@@ -515,7 +515,7 @@ if st.button('Calculate Estimated Price'):
     estimated_price = predict_budget(brand, model, cpu, ram, storage, gpu, storage_type, touch) * 84.43
 
     # Display the estimated price
-    st.write(f"## Estimated Laptop Price: ₹{estimated_price:.2f}")
+    st.write(f"## fEstimated Laptop Price: ₹{estimated_price:.2f}")
     
     # Optionally, add more explanation or features to improve the user experience
     st.write("*This is an estimate based on the selected specifications. Prices may vary depending on location and market conditions.*")
