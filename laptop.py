@@ -11,8 +11,6 @@ st.title("Laptop Budget Prediction for Students/Working Professionals")
 st.subheader("Confused in budget for your ideal laptop? It's all for you!")
 
 
-
-
 # Initializing dictionaries for various labels
 brand_encoding_dict = {'Acer': 0,
         'Alurin': 1,
@@ -567,10 +565,10 @@ def display_payment_qr(plan_name, amount):
     st.image(qr_image)
 
     st.session_state.predictions_left = amount
-    for price, details in plans.items():
-            if st.button(f"Buy {details[1]} for {price}"):
-                st.session_state.payment_initiated = True
-                display_payment_qr(price, int(price.split()[1]))
+    # for price, details in plans.items():
+    #         if st.button(f"Buy {details[1]} for {price}"):
+    #             st.session_state.payment_initiated = True
+    #             display_payment_qr(price, int(price.split()[1]))
     
 
     st.write("**After completing the payment, click the button below:**")
